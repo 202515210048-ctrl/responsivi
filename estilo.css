@@ -1,0 +1,423 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    
+}
+:root{
+    --fonte-topo:"Istok Web", sans-serif;
+    --fonte-banner-butao:"Julius Sans One", sans-serif;
+    --fonte-texto:"League Spartan", sans-serif;
+}
+head{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: rgb(132, 165, 157);
+
+}
+body{
+    font-family: var(--fonte-texto);
+}
+.grid-topo{
+     
+    background-color: rgb(247, 237, 226);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 40px;
+    align-items: center;
+    width: 100%;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+#cadastro{
+    display: grid;
+    grid-column: 4/4;
+    padding: 5px 15px;
+    margin-left: 10px;
+       
+    
+}
+nav{
+    background-color: rgb(242, 132, 130);
+}
+nav> ul{
+    list-style:none;
+    align-items: center;
+    width: 100%;
+    display:flex;
+    padding: 10px;
+    justify-content: space-around;
+    font-size: 1.5rem;
+    
+}
+nav a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.icom-topo{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+#icom{
+    position: grid;
+    width: 200px;
+    height: 40px;
+
+}
+.buscar{
+    left: auto;
+    width: 500px;
+    background-color: rgb(255, 255, 255);
+    height:40px;
+    padding:10px ;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    border: 1px solid black;
+    margin-left: 0;
+    
+}
+
+.busca{
+   background: none;
+   border: 0;
+   outline: 0;
+   font-size: 16px;
+   padding: 0;
+}
+
+.morango-banner{
+    background-color: rgb(245, 202, 195);
+    font-family: var(--fonte-banner-butao);
+    padding: 50px;
+    display: flex; 
+    justify-content: space-between;
+    position: relative;
+}
+.banner-imgs img{
+    max-width: 80%;
+    height: auto;
+    display: block;
+}
+.banner-imgs{
+    
+   position: relative;
+}
+.image-prinsipal{
+    width: 100%;
+    height: auto;
+}
+#texto-banner{
+    position: absolute;
+    top: 30%;
+    left: 65%; 
+    font-size: 2.5rem;
+    text-align: left;
+}
+
+.categorias{
+    padding: 20px;
+    text-align: center;
+}
+.vitrine-categoria{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.vitrine-categoria article {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    height: 10%;
+    gap: 20px;
+    max-width: 80%; 
+}
+.vitrine-categoria img {
+    width: 100%;
+    height: auto; 
+    display: block;
+    margin-bottom: 10px;
+}
+.botao-topo{
+    color: white;           
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer; 
+    font-size: 16px; 
+    text-decoration: none; 
+    display: inline-block;  
+}
+.linha-promocoes{
+    display: flex;
+    gap: 10%;
+    padding: 20px 0;
+    margin-top: 30px;
+    
+}
+
+.promo-topo{
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+    background-color: rgba(240, 240, 240, 1);
+    box-shadow: 0 6px 10px 0 rgb(131, 131, 131);
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 20px;
+    align-items: center;
+    margin-left: 20px ;
+}
+.promo-topo h1{
+    margin: 0;
+    white-space: nowrap;
+    font-size: 4rem;
+}
+.promo-topo h3{
+    margin: 0;
+    white-space: nowrap;
+    font-size: 1.5rem;
+}
+
+.botao-topo{
+    padding: 10px;
+    border-radius: 50px;
+    background-color: rgba(179, 106, 105, 1);
+    color: white;
+    font-family: var(--fonte-banner-butao);
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.icom-desconto{
+    font-size: 1.5rem;
+}
+.image-posi{
+    position: relative;
+    width: 1200px;
+    height: 677px ;
+    margin: auto;
+    
+}
+.image-prinsipal{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 10px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+.texto-sobre-imagem{
+    padding: 15px;
+    position: absolute;
+    text-align: left;
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+    background-color: rgba(246, 189, 96, 1);
+    color: rgba(107, 112, 92, 1);
+    border-radius: 50px;
+    width: 600px;
+    height: auto;
+    top: 10%;
+    left: 10%;
+    z-index: 10;
+}
+.botao-blog{
+    position: absolute;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: rgba(179, 106, 105, 1);
+    color: white;
+    font-family: var(--fonte-banner-butao);
+    text-decoration: none;
+    top: 60%;
+    right: 40%;
+    font-size: 1.5rem;
+    z-index: 10;
+}
+.vitrine{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+#promo{
+    display: flex;  
+    font-family: var(--fonte-banner-butao);
+    justify-content: left;
+    align-items: center;
+    padding: 30px;
+    font-size: 2.5rem;
+    margin: 10px;
+}
+.icom-promo{
+    font-size: 2rem;
+}
+.produto{
+    background-color: rgba(247, 237, 226, 1);
+    padding: 15px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 4px 4px 4px 3px rgba(245, 202, 195, 1);
+    margin: 10px;
+}
+.image-produto{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.produto-descricao{
+    font-size: 1em;
+    margin: 5px;
+}
+.produto-preco{
+    font-size: 1.5rem;
+    margin: 10px ;
+    text-align: left;
+}
+.botao{
+    display: block;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 40px;
+    background-color: rgba(179, 106, 105, 1);
+    color: white;
+    font-family: var(--fonte-banner-butao);
+    font-size: 1rem;
+   
+}
+.sobrenos{
+      background-color: rgba(107, 112, 92, 1);
+}
+.texto-sobrenos{
+    max-width: 800px;
+    padding: 50px 20px;
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-left: auto;
+    margin-right: auto;
+}
+.icom-fim{
+    background-color: rgba(242, 132, 130, 1);
+}
+.texto{
+    text-align: center;
+    font-family: var(--fonte-texto);
+    margin: 100px;
+}
+@media screen and (max-width:768px){ 
+    #cadastro{
+    position: grid;
+    padding: 5px 15px;
+    margin-left: 10px;  
+    
+}
+    .morango-banner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .banner-imgs img{
+    max-width: 70%;
+    height: auto;
+    display: block;
+}
+    #texto-banner {
+    position: relative;
+    width: 50%;
+    left: 30%; 
+    font-size: 1.5rem;
+    text-align: left;
+    }
+    .image-prinsipal{
+    position: relative;
+    width: 60%;
+    height: auto;
+    margin: 10px;
+    object-fit: cover;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    }
+    .botao-blog{
+    position: absolute;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: rgba(179, 106, 105, 1);
+    color: white;
+    font-family: var(--fonte-banner-butao);
+    text-decoration: none;
+    top: 45%;
+    right: 45%;
+    font-size: 1.5rem;
+    z-index: 10;
+}
+.linha-promocoes{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+    margin-top: 30px;
+    
+}
+.texto-sobre-imagem{
+    padding: 15px;
+    position: absolute;
+    text-align: left;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    background-color: rgba(246, 189, 96, 1);
+    color: rgba(107, 112, 92, 1);
+    border-radius: 50px;
+    width: 40%;
+    height: auto;
+    top: 5%;
+    left: 5%;
+    z-index: 10;
+}
+    .vitrine-categoria article, .produto {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+     #texto-banner {
+    position: absolute;
+    top: 30%;
+    left: 65%; 
+    font-size: 1.5rem;
+    text-align: left;
+    }
+
+    .vitrine-categoria article, .produto {
+        width: 100%; 
+    }
+    
+    .promo-topo {
+        width: 100%;
+        flex-direction: column;
+    }
+
+
+}
